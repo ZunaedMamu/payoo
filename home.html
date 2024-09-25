@@ -26,7 +26,7 @@
      <div class="camera"></div>
         <div class="display">
           <div class="artboard artboard-demo phone-1 p-2 bg-slate-100">
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 relative bottom-20">
                 <div class="flex-1">
                   <a class="btn btn-ghost text-xl w-20"><img src="resources/Group.png" alt="" class="w-full"></a>
                   <div class="flex flex-col font-bold">
@@ -40,14 +40,14 @@
                   </button>
                 </div>
               </div>
-              <div class="divider"></div>
+              <div class="divider relative bottom-20"></div>
               <div>
-                <div class="bg-white mb-5 p-2 hidden">
+                <div id="welcome" class="bg-white mb-5 p-2 relative bottom-24 block">
                     <h3>WELCOME Payoo Home</h3>
                     <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-2">
+            <div class="grid grid-cols-3 gap-2 relative bottom-20">
                 <button id="btn-add-money" class="btn btn-xs btn-sm bg-white "><a href="">Add Money</a></button>
                 <button id="btn-cash-out" class="btn btn-xs btn-sm bg-white">Cash Out</button>
                  <button class="btn btn-xs btn-sm bg-white">Transfer Money</button>
@@ -55,69 +55,8 @@
                 <button class="btn btn-xs btn-sm bg-white">Pay Bill</button>
                 <button class="btn btn-xs btn-sm bg-white">Transaction</button>
             </div>
-            <div class="divider"></div>
-            <div id="add-money-form" class="card bg-base-100 w-72 shrink-0 shadow-2xl hidden">
-                <form class="card-body">
-                    <div class="form-control hidden">
-                        <label class="label">
-                          <span class="label-text font-bold text-md">Select Bank</span>
-                        </label>
-                        <input type="text" placeholder="Select Bank" class="input input-bordered text-xs bg-gray-50 rounded-3xl" autocomplete="on" />
-                      </div>
-                    <div class="form-control hidden">
-                    <label class="label">
-                      <span class="label-text font-bold text-md">Mobile Number</span>
-                    </label>
-                    <input id="phone-number" type="text" placeholder="Enter Phone Number" class="input input-bordered text-xs bg-gray-50 rounded-3xl" autocomplete="on" />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold text-md">Amount to add</span>
-                    </label>
-                    <input id="amount" type="number" placeholder="Enter Amount" class="input input-bordered text-xs bg-gray-50 rounded-3xl" autocomplete="on" />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold text-md">4-Digit Pin</span>
-                    </label>
-                    <input id="pin" type="password" placeholder="Enter Your Pin" class="bg-gray-50 input input-bordered text-xs rounded-3xl" autocomplete="on" />
-                 </div>
-                  <div class="form-control mt-6">
-                    <button id="btn-add-money" class="btn btn-primary rounded-3xl">Add Money</button>
-                  </div>
-                </form>
-              </div>
-            <div id="cash-out-form" class="card bg-base-100 w-72 shrink-0 shadow-2xl hidden">
-                <form class="card-body">
-                    <div class="form-control hidden">
-                        <label class="label">
-                          <span class="label-text font-bold text-md">Select Bank</span>
-                        </label>
-                        <input type="text" placeholder="Select Bank" class="input input-bordered text-xs bg-gray-50 rounded-3xl" autocomplete="on" />
-                      </div>
-                    <div class="form-control hidden">
-                    <label class="label">
-                      <span class="label-text font-bold text-md">Mobile Number</span>
-                    </label>
-                    <input id="phone-number2" type="text" placeholder="Enter Phone Number" class="input input-bordered text-xs bg-gray-50 rounded-3xl" autocomplete="on" />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold text-md">Amount to add</span>
-                    </label>
-                    <input id="cashout-amount2" type="number" placeholder="Enter Amount" class="input input-bordered text-xs bg-gray-50 rounded-3xl" autocomplete="on" />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold text-md">4-Digit Pin</span>
-                    </label>
-                    <input id="pin2" type="password" placeholder="Enter Your Pin" class="bg-gray-50 input input-bordered text-xs rounded-3xl" autocomplete="on" />
-                 </div>
-                  <div class="form-control mt-6">
-                    <button id="btn-cashout-money" class="btn btn-primary rounded-3xl">Cash Out</button>
-                  </div>
-                </form>
-              </div>
+            <div class="divider relative bottom-32"></div>
+           
           </div>
        </div>
     </div>
@@ -125,6 +64,7 @@
 <script src="js/addmoney.js"></script>
 <script src="js/cashout.js"></script>
 <script src="js/feature.js"></script>
+
 
 </body>
 </html>

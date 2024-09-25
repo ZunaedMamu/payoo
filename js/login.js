@@ -12,6 +12,7 @@ document.getElementById("btn").addEventListener("click", function(event){
     if(phone === "01845682811" && pin === "1234"){
         alert("Login successful");
         window.location.href = "../home.html";
+        
     }
     else{
         // Alert 
