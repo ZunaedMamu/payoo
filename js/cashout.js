@@ -1,5 +1,5 @@
-console.log("home added");
-document.getElementById("btn-cashout-money").addEventListener("click", function(event){
+
+document.getElementById("btn-money-cashout").addEventListener("click", function(event){
     event.preventDefault();
     // console.log ("login button clicked");
 
@@ -17,7 +17,14 @@ document.getElementById("btn-cashout-money").addEventListener("click", function(
     if(pin === "1234" && newAmount>=0){
         alert("Money Withdrawal");
         document.getElementById("current-amount").innerText= newAmount;
-       
+                const trans =document.createElement("div");
+        trans.classList.add("bg-yellow-300");
+        trans.innerHTML=`
+                                   <h3 class="text-center font-extrabold text-2xl">Withdraw</h3>
+                        <p>  ${cashOutAmountNumber} withdraw.New balance ${newAmount}  <p>`
+
+        document.getElementById("transaction-list").appendChild(trans);
+            
     }
     else{
         // Alert 

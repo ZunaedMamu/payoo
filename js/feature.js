@@ -1,18 +1,23 @@
-document.getElementById("btn-add-money").addEventListener("click", function(event){
-    window.location.href = "../feature.html";
-    document.getElementById("add-money-form").classList.remove("hidden");
-   document.getElementById("cash-out-form").classList.add("hidden");
+document.getElementById("logout").addEventListener("click", function(){
+    window.location.href = "../index.html";
+
+})
+
+document.getElementById("btn-add-money").addEventListener("click", function(){
+      showSectionById("add-money-form");
   
-
-//    document.getElementById("main-form").classList.add("hidden");
-
 })
-document.getElementById("btn-cash-out").addEventListener("click", function(event){
-    window.location.href = "../feature.html";
-    document.getElementById("cash-out-form").classList.remove("hidden");
-    document.getElementById("add-money-form").classList.add("hidden");
-
-    // document.getElementById("main-form").classList.add("hidden");
-
-
+document.getElementById("btn-cash-out").addEventListener("click", function(){
+        showSectionById("cash-out-form");
+ 
+   
 })
+document.getElementById("btn-transaction").addEventListener("click", function(){
+       showSectionById("transaction-list");
+ 
+   
+})
+// document.getElementById("back").addEventListener("click", function(){
+//     window.location.href = "../home.html";
+
+// })
